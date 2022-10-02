@@ -1,11 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+import './styles/App.css';
+import  ContactForm from './pages/ContactForm';
+
+  function App(){
+
   return (
-    <div className="App">
-     <h1>React Forms</h1>
-       
+    <div className="app">
+      <ContactForm />
     </div>
   );
 }

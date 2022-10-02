@@ -1,0 +1,60 @@
+.app {
+  width: 100vw;
+  min-height: 130vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aquamarine;
+
+}
+.form-box{
+ background-color: white;
+ border-radius: 20px;
+   width: 40vw;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+.form-container{
+    width: 60%;
+ }
+
+.btn-div{
+  display: flex;
+  justify-content: center;
+  
+}
+
+.form-btn{
+    background-color: aquamarine;
+    width: 180px;
+    height: 40px;
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+input{
+  height: 40px;
+  width: 270px;
+  border-radius: 5px;
+}
+span{
+  color: red;
+  display: none;
+  font-size: 14px;
+}
+
+
+input:invalid[focused='true'] ~ span{
+  display: block;
+}
+input:invalid[focused='true']{
+  border: 1px solid red;
+}
+input:valid{
+  border: 2px solid green;
+}
+
+
+@import url('__inputFields.css')
